@@ -1,0 +1,196 @@
+<br><br><br>
+<div class="container mx-auto border border-primary">
+  <br>
+  <form ngNativeValidate action="" method="POST" (ngSubmit)="onSubmit()" [formGroup]="clientForm">
+    <div class="row">
+      <div class="col-12 col-lg-5">
+        <div class="form-row form-group">
+          <div class="col-12 col-md-3 col-lg-5 text-sm-left text-md-right">
+            <label for="name">Nom</label>
+          </div>
+          <div class="col">
+            <input type="text"
+                   class="form-control"
+                   id="name"
+                   name="name"
+                   minlength="3" maxlength="20"
+                   pattern="^[A-Z][a-z\-]{3,19}$"
+                   formControlName="name">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-5">
+        <div class="form-row form-group">
+          <div class="col-12 col-md-3 col-lg-5 text-sm-left text-md-right">
+            <label for="surname">Prénom</label>
+          </div>
+          <div class="col">
+            <input type="text"
+                   class="form-control"
+                   id="surname"
+                   name="surname"
+                   minlength="3" maxlength="20"
+                   pattern="^[A-Z][a-z\-]{3,19}$"
+                   formControlName="surname">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-lg-5">
+        <div class="form-row form-group">
+          <div class="col-12 col-md-3 col-lg-5 text-sm-left text-md-right">
+            <label for="address">Adresse</label>
+          </div>
+          <div class="col">
+            <input type="text"
+                   class="form-control"
+                   id="address"
+                   name="address"
+                   formControlName="address">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-5">
+        <div class="form-row form-group">
+          <div class="col-12 col-md-3 col-lg-5 text-sm-left text-md-right">
+            <label for="cp">Code postal</label>
+          </div>
+          <div class="col">
+            <input type="text"
+                   class="form-control"
+                   id="cp"
+                   name="cp"
+                   minlength="5" maxlength="5"
+                   pattern="^[0-9]{5}$"
+                   formControlName="cp">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-lg-5">
+        <div class="form-row form-group">
+          <div class="col-12 col-md-3 col-lg-5 text-sm-left text-md-right">
+            <label for="city">Ville</label>
+          </div>
+          <div class="col">
+            <input type="text"
+                   class="form-control"
+                   id="city"
+                   name="city"
+                   formControlName="city">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-lg-5">
+        <div class="form-row form-group">
+          <div class="col-12 col-md-3 col-lg-5 text-sm-left text-md-right">
+            <label for="phone">Tel</label>
+          </div>
+          <div class="col">
+            <input type="tel"
+                   class="form-control"
+                   id="phone"
+                   name="phone"
+                   minlength="10" maxlength="10"
+                   pattern="^(0[1-9]{9})$"
+                   formControlName="phone">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-5">
+        <div class="form-row form-group">
+          <div class="col-12 col-md-3 col-lg-5 text-sm-left text-md-right">
+            <label for="email">Adresse mail</label>
+          </div>
+          <div class="col">
+            <input type="email"
+                   class="form-control"
+                   id="email"
+                   name="email"
+                   aria-describedby="emailHelp"
+                   formControlName="email">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-lg-5">
+        <div class="form-row form-group">
+          <div class="col-12 col-md-3 col-lg-5 text-sm-left text-md-right">
+            <label for="civility">Civilité</label>
+          </div>
+          <div class="col">
+            <select class="form-control" id="civility" name="civility" formControlName="civility">
+              <option>Homme</option>
+              <option>Femme</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-5">
+        <div class="form-row form-group">
+          <div class="col-12 col-md-3 col-lg-5 text-sm-left text-md-right">
+            <label for="login">Login</label>
+          </div>
+          <div class="col">
+            <input type="text"
+                   class="form-control"
+                   id="login"
+                   name="login"
+                   formControlName="login">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-lg-5">
+        <div class="form-row form-group">
+          <div class="col-12 col-md-3 col-lg-5 text-sm-left text-md-right">
+            <label for="password">Mot de passe</label>
+          </div>
+          <div class="col">
+            <input type="password"
+                   class="form-control"
+                   id="password"
+                   name="password"
+                   formControlName="password">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-5">
+        <div class="form-row form-group">
+          <div class="col-12 col-md-3 col-lg-5 text-sm-left text-md-right">
+            <label for="passwordValidation">Validation mot de passe</label>
+          </div>
+          <div class="col">
+            <input type="password"
+                   class="form-control"
+                   id="passwordValidation"
+                   name="passwordValidation"
+                   [(ngModel)]="passwordValidation">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-md-center">
+      <div class="col col-lg-2">
+        <button type="submit" class="btn btn-primary">Enregistrer</button>
+      </div>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,32 @@
+<br><br><br>
+<div class="container mx-auto border border-primary">
+  <br>
+  <select class="custom-select custom-select-lg mb-3" [formControl]="filterCategory" (ngModelChange)="filter()">
+    <option value="">Filter category</option>
+    <option value="multimedia">Multimedia</option>
+    <option value="spare-time">Spare-time</option>
+  </select>
+
+  <input type="text" class="form-control" [formControl]="filterName" (ngModelChange)="filter()">
+
+  <table class="table">
+    <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Category</th>
+      <th scope="col">Price</th>
+      <th scope="col">Add</th>
+      <th scope="col">Details</th>
+    </tr>
+    </thead>
+    <tbody *ngFor="let product of products | async let i = index">
+    <tr>
+      <td>{{ product.name | titlecase}}</td>
+      <td>{{ product.category | titlecase}}</td>
+      <td>{{ product.price}}€</td>
+      <td><button type="button" class="btn btn-primary" (click)="onClickAdd(product)">Add</button></td>
+      <td><a [routerLink]="['/details', i]">Details</a></td>
+    </tr>
+    </tbody>
+  </table>
+</div>

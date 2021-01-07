@@ -1,0 +1,37 @@
+[
+  {
+    "id": "0",
+    "name": "television",
+    "category": "multimedia",
+    "price": "1200.99",
+    "details": "Superbe télévision avec écran full 4k"
+  },
+  {
+    "id": "1",
+    "name": "smartphone",
+    "category": "multimedia",
+    "price": "300",
+    "details": "Superbe smartphone avec écran amoled"
+  },
+  {
+    "id": "2",
+    "name": "computer",
+    "category": "multimedia",
+    "price": "450",
+    "details": "Superbe pc portable gamer"
+  },
+  {
+    "id": "3",
+    "name": "bike",
+    "category": "spare-time",
+    "price": "550",
+    "details": "Superbe vélo pour aller où vous voulez"
+  },
+  {
+    "id": "4",
+    "name": "scooter",
+    "category": "spare-time",
+    "price": "120",
+    "details": "Superbe scooter"
+  }
+]

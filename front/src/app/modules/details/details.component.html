@@ -1,0 +1,22 @@
+<div class="container mx-auto border border-primary">
+  <table class="table">
+    <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Category</th>
+      <th scope="col">Price</th>
+      <th scope="col">Add</th>
+      <th scope="col">Details</th>
+    </tr>
+    </thead>
+    <tbody *ngFor="let product of products | async">
+    <tr>
+      <td>{{ product.name | titlecase}}</td>
+      <td>{{ product.category | titlecase}}</td>
+      <td>{{ product.price}}€</td>
+      <td><button type="button" class="btn btn-primary" (click)="onClickAdd(product)">Add</button></td>
+      <td>{{ product.details}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>

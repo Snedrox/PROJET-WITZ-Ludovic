@@ -1,0 +1,161 @@
+<br><br><br>
+<div class="container mx-auto border border-primary">
+  <br>
+  <form action="">
+    <div *ngIf="client | async as me">
+    <div class="row">
+      <div class="col-12 col-lg-5">
+        <div class="form-row form-group">
+          <div class="col-12 col-md-3 col-lg-5 text-sm-left text-md-right">
+            <label for="name">Nom</label>
+          </div>
+          <div class="col">
+            <input type="text"
+                   class="form-control"
+                   id="name"
+                   name="name"
+                   [value]="me.name"
+                   disabled>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-5">
+        <div class="form-row form-group">
+          <div class="col-12 col-md-3 col-lg-5 text-sm-left text-md-right">
+            <label for="surname">Prénom</label>
+          </div>
+          <div class="col">
+            <input type="text"
+                   class="form-control"
+                   id="surname"
+                   name="surname"
+                   [value]="me.surname"
+                   disabled>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-lg-5">
+        <div class="form-row form-group">
+          <div class="col-12 col-md-3 col-lg-5 text-sm-left text-md-right">
+            <label for="address">Adresse</label>
+          </div>
+          <div class="col">
+            <input type="text"
+                   class="form-control"
+                   id="address"
+                   name="address"
+                   [value]="me.address"
+                   disabled>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-5">
+        <div class="form-row form-group">
+          <div class="col-12 col-md-3 col-lg-5 text-sm-left text-md-right">
+            <label for="cp">Code postal</label>
+          </div>
+          <div class="col">
+            <input type="text"
+                   class="form-control"
+                   id="cp"
+                   name="cp"
+                   [value]="me.cp"
+                   disabled>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-lg-5">
+        <div class="form-row form-group">
+          <div class="col-12 col-md-3 col-lg-5 text-sm-left text-md-right">
+            <label for="city">Ville</label>
+          </div>
+          <div class="col">
+            <input type="text"
+                   class="form-control"
+                   id="city"
+                   name="city"
+                   [value]="me.city"
+                   disabled>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-lg-5">
+        <div class="form-row form-group">
+          <div class="col-12 col-md-3 col-lg-5 text-sm-left text-md-right">
+            <label for="phone">Tel</label>
+          </div>
+          <div class="col">
+            <input type="tel"
+                   class="form-control"
+                   id="phone"
+                   name="phone"
+                   [value]="me.phone | phoneNumber: 'FR'"
+                   disabled>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-5">
+        <div class="form-row form-group">
+          <div class="col-12 col-md-3 col-lg-5 text-sm-left text-md-right">
+            <label for="email">Adresse mail</label>
+          </div>
+          <div class="col">
+            <input type="email"
+                   class="form-control"
+                   id="email"
+                   name="email"
+                   [value]="me.email"
+                   disabled>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-lg-5">
+        <div class="form-row form-group">
+          <div class="col-12 col-md-3 col-lg-5 text-sm-left text-md-right">
+            <label for="civility">Civilité</label>
+          </div>
+          <div class="col">
+            <input type="text"
+                   class="form-control"
+                   id="civility"
+                   name="civility"
+                   [value]="me.civility"
+                   disabled>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-5">
+        <div class="form-row form-group">
+          <div class="col-12 col-md-3 col-lg-5 text-sm-left text-md-right">
+            <label for="login">Login</label>
+          </div>
+          <div class="col">
+            <input type="text"
+                   class="form-control"
+                   id="login"
+                   name="login"
+                   [value]="me.login"
+                   disabled>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </form>
+</div>

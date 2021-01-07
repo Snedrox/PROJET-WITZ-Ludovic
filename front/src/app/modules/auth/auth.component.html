@@ -1,0 +1,37 @@
+<br><br><br>
+<div class="container mx-auto border border-primary">
+  <br>
+  <form ngNativeValidate action="" method="POST" (ngSubmit)="onSubmit()" [formGroup]="authForm">
+    <div class="row justify-content-md-center">
+      <div class="col col-lg-4">
+        <div class="form-row form-group">
+            <input type="text"
+                   class="form-control"
+                   id="login"
+                   name="login"
+                   formControlName="login"
+                   placeholder="Login">
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-md-center">
+      <div class="col col-lg-4">
+        <div class="form-row form-group">
+            <input type="password"
+                   class="form-control"
+                   id="password"
+                   name="password"
+                   formControlName="password"
+                   placeholder="Password">
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-md-center">
+      <div class="col col-lg-2">
+        <button type="submit" class="btn btn-primary">Connection</button>
+      </div>
+    </div>
+  </form>
+</div>
