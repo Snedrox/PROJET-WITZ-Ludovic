@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Client } from '../models/client';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import { Observable } from 'rxjs';
+import {environment} from '../../environments/environment.prod';
 
 @Injectable({
   providedIn: 'root'
@@ -23,6 +24,6 @@ export class ClientManagerService {
       + '&phone=' + client.phone
       + '&email=' + client.email
       + '&civility=' + client.civility;
-    return this.http.post<Client>('https://projet-witz-ludovic-back.herokuapp.com/addClient', data, httpOptions);
+    return this.http.post<Client>(environment.api + '/addClient', data, httpOptions);
   }
 }
