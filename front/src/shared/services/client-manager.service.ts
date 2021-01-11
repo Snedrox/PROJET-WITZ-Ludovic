@@ -12,7 +12,7 @@ export class ClientManagerService {
 
   addClient(client: Client): Observable<Client> {
     let data: string;
-    const httpOptions = {headers: new HttpHeaders({ 'Content-Type': 'application/x-www-form-urlencoded' })};
+    const httpOptions = {headers: new HttpHeaders({ 'Content-Type': 'application/x-www-form-urlencoded'})};
     data = 'name=' + client.name
       + '&surname=' + client.surname
       + '&login=' + client.login
@@ -23,6 +23,6 @@ export class ClientManagerService {
       + '&phone=' + client.phone
       + '&email=' + client.email
       + '&civility=' + client.civility;
-    return this.http.post<Client>('/api/addClient', data, httpOptions);
+    return this.http.post<Client>('https://projet-witz-ludovic-back.herokuapp.com/addClient', data, httpOptions);
   }
 }

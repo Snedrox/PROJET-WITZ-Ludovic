@@ -1,6 +1,6 @@
 {
   "/api/*": {
-    "target": "https://tp06-witz-ludovic.herokuapp.com/",
+    "target": "https://projet-witz-ludovic-back.herokuapp.com/",
     "secure": false,
     "logLevel": "debug",
     "pathRewrite": {

@@ -12,9 +12,9 @@ export class AuthService {
 
   auth(client: Client): Observable<Client> {
     let data: string;
-    const httpOptions = {headers: new HttpHeaders({ 'Content-Type': 'application/x-www-form-urlencoded' })};
+    const httpOptions = {headers: new HttpHeaders({ 'Content-Type': 'application/x-www-form-urlencoded'})};
     data = '&login=' + client.login
       + '&password=' + client.password;
-    return this.http.post<Client>('/api/login', data, httpOptions);
+    return this.http.post<Client>('https://projet-witz-ludovic-back.herokuapp.com/login', data, httpOptions);
   }
 }
