@@ -1,37 +1,50 @@
 [
   {
     "id": "0",
-    "name": "television",
-    "category": "multimedia",
-    "price": "1200.99",
-    "details": "Superbe télévision avec écran full 4k"
+    "name": "Appareil photo Hybride Nikon Z6II noir",
+    "category": "hybride",
+    "price": "2799",
+    "details": "Le meilleur appareil hybride à ce jour",
+    "image": "https://static.fnac-static.com/multimedia/Images/FR/MDM/b0/0a/f0/15731376/1540-1/tsp20201025180416/Appareil-photo-Hybride-Nikon-Z6II-noir-Objectif-Z-24-70mm-f-4-S.jpg"
   },
   {
     "id": "1",
-    "name": "smartphone",
-    "category": "multimedia",
-    "price": "300",
-    "details": "Superbe smartphone avec écran amoled"
+    "name": "Appareil photo hybride Fujifilm X-T4 Argent",
+    "category": "hybride",
+    "price": "2099",
+    "details": "Appareil hybride style vintage",
+    "image": "https://static.fnac-static.com/multimedia/Images/FR/MDM/b0/ee/d7/14151344/1540-1/tsp20200313170331/Appareil-photo-hybride-Fujifilm-X-T4-Argent-Objectif-XF-16-80-mm-f-1-4-Noir.jpg"
   },
   {
     "id": "2",
-    "name": "computer",
-    "category": "multimedia",
-    "price": "450",
-    "details": "Superbe pc portable gamer"
+    "name": "Appareil photo Reflex Nikon D3500 Noir",
+    "category": "reflex",
+    "price": "599",
+    "details": "Une valeur sûre",
+    "image": "https://static.fnac-static.com/multimedia/Images/FR/MDM/c8/ab/87/8891336/1540-1/tsp20200408102251/Appareil-photo-Reflex-Nikon-D3500-Noir-Objectif-Nikkor-AF-P-DX-18-55-mm-f-3-5-5-6-VR-Objectif-AF-P-DX-70-300-mm-f-4-5-6-3G-ED-VR.jpg"
   },
   {
     "id": "3",
-    "name": "bike",
-    "category": "spare-time",
-    "price": "550",
-    "details": "Superbe vélo pour aller où vous voulez"
+    "name": "Appareil photo compact Leica Q2 Noir",
+    "category": "compact",
+    "price": "4990",
+    "details": "Pour emmener partout avec vous",
+    "image": "https://static.fnac-static.com/multimedia/Images/FR/MDM/70/bb/aa/11189104/1540-1/tsp20200612130103/Appareil-photo-compact-Leica-Q2-Noir.jpg"
   },
   {
     "id": "4",
-    "name": "scooter",
-    "category": "spare-time",
-    "price": "120",
-    "details": "Superbe scooter"
+    "name": "Reflex Canon EOS 5D Mark IV",
+    "category": "reflex",
+    "price": "2599",
+    "details": "Appareil vendu sans objectif",
+    "image": "https://static.fnac-static.com/multimedia/Images/FR/NR/a9/c5/7e/8308137/1540-1/tsp20170823155609/Reflex-Canon-EOS-5D-Mark-IV-Boitier-Nu.jpg"
+  },
+  {
+    "id": "5",
+    "name": "Hybride Fujifilm X-T30 Argent",
+    "category": "hybride",
+    "price": "1299",
+    "details": "Simple et efficace",
+    "image": "https://static.fnac-static.com/multimedia/Images/FR/MDM/27/f1/7b/8122663/1540-1/tsp20201105072017/Hybride-Fujifilm-X-T30-Argent-Objectif-XF-18-55-mm-f-2-8-4.jpg"
   }
 ]

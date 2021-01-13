@@ -1,17 +1,21 @@
 <br><br><br>
-<div class="container mx-auto border border-primary">
+<div class="container mx-auto rounded" style="background-color: #EFF0F0;">
   <br>
   <select class="custom-select custom-select-lg mb-3" [formControl]="filterCategory" (ngModelChange)="filter()">
     <option value="">Filter category</option>
-    <option value="multimedia">Multimedia</option>
-    <option value="spare-time">Spare-time</option>
+    <option value="compact">Compact</option>
+    <option value="hybride">Hybride</option>
+    <option value="reflex">Reflex</option>
   </select>
 
   <input type="text" class="form-control" [formControl]="filterName" (ngModelChange)="filter()">
 
-  <table class="table">
-    <thead>
+  <br>
+
+  <table class="table table-light">
+    <thead class="table-dark">
     <tr>
+      <th scope="col">Image</th>
       <th scope="col">Name</th>
       <th scope="col">Category</th>
       <th scope="col">Price</th>
@@ -21,10 +25,13 @@
     </thead>
     <tbody *ngFor="let product of products | async let i = index">
     <tr>
+      <td>
+        <img src="{{product.image}}" width="80px" height="80px">
+      </td>
       <td>{{ product.name | titlecase}}</td>
       <td>{{ product.category | titlecase}}</td>
       <td>{{ product.price}}€</td>
-      <td><button type="button" class="btn btn-primary" (click)="onClickAdd(product)">Add</button></td>
+      <td><button type="button" class="btn btn-secondary" (click)="onClickAdd(product)">Add</button></td>
       <td><a [routerLink]="['/details', i]">Details</a></td>
     </tr>
     </tbody>

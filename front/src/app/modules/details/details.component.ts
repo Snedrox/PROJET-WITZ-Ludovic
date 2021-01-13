@@ -28,10 +28,10 @@ export class DetailsComponent implements OnInit {
   }
 
   onClickAdd(product: Product): void {
-    this.addProduct(product.id, product.name, product.category, product.price, product.details);
+    this.addProduct(product.id, product.name, product.category, product.price, product.details, product.image);
   }
 
-  addProduct(id, name, category, price, details): void {
-    this.store.dispatch(new AddProduct({id, name, category, price, details}));
+  addProduct(id, name, category, price, details, image): void {
+    this.store.dispatch(new AddProduct({id, name, category, price, details, image}));
   }
 }

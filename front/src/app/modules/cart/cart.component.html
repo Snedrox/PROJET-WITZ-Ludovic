@@ -1,9 +1,10 @@
 <br><br><br>
-<div class="container mx-auto border border-primary">
+<div class="container mx-auto rounded" style="background-color: #EFF0F0;">
   <br>
-  <table class="table">
-    <thead>
+  <table class="table  table-light">
+    <thead class="table-dark">
     <tr>
+      <th scope="col">Image</th>
       <th scope="col">Name</th>
       <th scope="col">Category</th>
       <th scope="col">Price</th>
@@ -12,10 +13,13 @@
     </thead>
     <tbody *ngFor="let product of products | async">
     <tr>
+      <td>
+        <img src="{{product.image}}" width="80px" height="80px">
+      </td>
       <td>{{ product.name | titlecase}}</td>
       <td>{{ product.category | titlecase}}</td>
       <td>{{ product.price}}€</td>
-      <td><button type="button" class="btn btn-primary" (click)="onClick(product)">Delete</button></td>
+      <td><button type="button" class="btn btn-secondary" (click)="onClick(product)">Delete</button></td>
     </tr>
     </tbody>
   </table>

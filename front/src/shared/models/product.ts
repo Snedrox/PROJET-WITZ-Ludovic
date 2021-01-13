@@ -4,5 +4,6 @@ export class Product {
   category: string;
   price: string;
   details: string;
+  image: string;
   constructor(){}
 }

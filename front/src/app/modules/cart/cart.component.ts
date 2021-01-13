@@ -20,10 +20,10 @@ export class CartComponent implements OnInit {
   }
 
   onClick(product: Product): void {
-    this.delProduct(product.id, product.name, product.category, product.price, product.details);
+    this.delProduct(product.id, product.name, product.category, product.price, product.details, product.image);
   }
 
-  delProduct(id, name, category, price, details): void {
-    this.store.dispatch(new DelProduct({id, name, category, price, details}));
+  delProduct(id, name, category, price, details, image): void {
+    this.store.dispatch(new DelProduct({id, name, category, price, details, image}));
   }
 }
